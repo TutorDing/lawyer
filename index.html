@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丁丁 - 越南法律专家</title>
+    <style>
+        /* 全局样式 */
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a363d9;
+            --text-color: #2c3e50;
+            --bg-color: #f5f6fa;
+            --card-bg: #f8f9fa;
+            --card-hover-bg: #f0f2f5;
+            --white: #fff;
+            --shadow-color: rgba(108, 92, 231, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .page-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .header-contact {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .header-contact a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .header-contact a:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* 主要内容样式 */
+        .main-content {
+            display: grid;
+            gap: 2rem;
+        }
+
+        section {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .section-container {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 600;
+        }
+
+        /* 卡片样式 */
+        .education-card,
+        .expertise-card,
+        .case-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .education-card:hover,
+        .expertise-card:hover,
+        .case-card:hover {
+            background: var(--card-hover-bg);
+            transform: translateY(-5px);
+        }
+
+        /* 页脚样式 */
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* 响应式优化 */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 3rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-container {
+                padding: 1.5rem;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="profile-image"></div>
+            <h1>丁丁</h1>
+            <p class="subtitle">越南法律专家</p>
+            <div class="header-contact">
+                <a href="mailto:3743732@qq.com">📧 3743732@qq.com</a>
+                <a href="tel:15850072976">📱 15850072976</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="about">
+                <div class="section-container">
+                    <h2 class="section-title">👤 关于我</h2>
+                    <p>作为专注于越南法律的执业律师，我致力于为客户提供专业的法律服务。深入研究越南商业法律体系，擅长处理中越跨境贸易、投资等法律事务。提供全方位的法律咨询和解决方案。</p>
+                </div>
+            </section>
+
+            <section class="education">
+                <div class="section-container">
+                    <h2 class="section-title">🎓 教育背景</h2>
+                    <div class="education-card">
+                        <h3>河内法律大学</h3>
+                        <p>法学学士学位 | 优秀毕业生</p>
+                    </div>
+                    <div class="education-card" style="margin-top: 1rem;">
+                        <h3>越南司法部认证</h3>
+                        <p>执业律师资格证</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="expertise">
+                <div class="section-container">
+                    <h2 class="section-title">⚖️ 专业特长</h2>
+                    <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="expertise-card">
+                            <h3>🏢 商业法律</h3>
+                            <p>精通越南商业法规体系，为企业提供投资、并购、合规等全方位法律服务</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h3>🌏 跨境贸易</h3>
+                            <p>专注中越跨境贸易法律事务，包括贸易合同、知识产权保护、争议解决等</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h3>📋 法律咨询</h3>
+                            <p>提供专业的越南法律咨询服务，帮助客户规避法律风险，保障合法权益</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="success-cases">
+                <div class="section-container">
+                    <h2 class="section-title">🏆 成功案例</h2>
+                    <div class="cases-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="case-card">
+                            <h3>💼 企业投资</h3>
+                            <p>成功协助多家中国企业在越南设立分公司，处理公司注册、经营许可等法律事务，确保合规运营</p>
+                        </div>
+                        <div class="case-card">
+                            <h3>⚡ 争议解决</h3>
+                            <p>代理多起中越贸易纠纷案件，通过谈判、调解等方式成功解决跨境商业争议，维护客户权益</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="languages">
+                <div class="section-container">
+                    <h2 class="section-title">🗣️ 语言能力</h2>
+                    <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="expertise-card">
+                            <h3>🇻🇳 越南语</h3>
+                            <p>精通，可处理各类法律文件，进行专业法律谈判和法庭辩护</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h3>🇨🇳 中文</h3>
+                            <p>母语</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 丁丁. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
